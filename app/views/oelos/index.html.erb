@@ -1,0 +1,23 @@
+<h1>Oelos#index</h1>
+
+ <%= form_tag("new", :method => 'post')  do   %>
+    <table>
+      <tr>
+        <td><%= label_tag(:numero1, "numero1:") %></td>
+        <td><%= text_field_tag(:numero1) %></td>
+      </tr>
+      <tr>
+        <td><%= label_tag(:numero2, "numero2:") %></td>
+        <td><%= text_field_tag(:numero2) %></td>
+      </tr>
+      <tr>
+        <td><%= label_tag(:operacion, "Operacion:") %></td>
+        <td><%= text_field_tag(:operacion) %></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><%= submit_tag("resutado",:class => "resultado") %></td>
+      </tr>
+     </table>
+ <% end %>
+
